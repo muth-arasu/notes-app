@@ -40,7 +40,7 @@ const App = () => {
       <div className="container h-full w-full  ">
         <div className="flex h-full w-full relative">
           <Sidebar />
-          <div className="  w-auto h-full   bg-blue-50 py-12">
+          <div className="  w-full h-full   bg-blue-50 py-12">
             <div className='lg:px-24'>
               <CreateNote onAddNote={handleAddNote} />
             </div>
