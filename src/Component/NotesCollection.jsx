@@ -23,7 +23,7 @@ const NotesCollection = ({ notes, onDeleteNotes, onEditNote, editIndex, onSaveEd
   };
 
   return (
-    <div className='flex flex-wrap'>
+    <div className='flex flex-wrap '>
       {notes.map((note, index) => (
         <div className='w-72 h-72 bg-white shadow-lg m-6 rounded-lg p-6 flex flex-col gap-3' key={index}>
           <header className='flex px-2 py-1 justify-between text-xl font-semibold text-bluess-800 w-full h-12 relative '>
@@ -45,7 +45,7 @@ const NotesCollection = ({ notes, onDeleteNotes, onEditNote, editIndex, onSaveEd
               <>
                 <h2 className='text-xl text-bluess-800 font-semibold'>{note.title}</h2>
                 <div className='flex gap-3 '>
-                  <MdModeEditOutline size={25} onClick={() => onEditNote(index)} />
+                  <MdModeEditOutline size={25} onClick={() => onEditNote(index)} className='hover:fill-green-800'/>
                   <MdDelete size={25} onClick={() => onDeleteNotes(index)} />
                 </div>
               </>

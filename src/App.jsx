@@ -37,11 +37,11 @@ const App = () => {
 
   return (
     <>
-      <div className="container h-full px-4">
-        <div className="flex h-full">
+      <div className="container h-full w-full  ">
+        <div className="flex h-full w-full relative">
           <Sidebar />
-          <div className="flex-1 h-full p-4 bg-blue-50">
-            <div>
+          <div className="  w-auto h-full   bg-blue-50 py-12">
+            <div className='lg:px-24'>
               <CreateNote onAddNote={handleAddNote} />
             </div>
             <div className="mt-6 ml-3 flex items-center -gap-3">
@@ -50,7 +50,7 @@ const App = () => {
             </div>
             <p className="text-md text-gray-900 ml-6 mt-6">Recently Viewed</p>
 
-            <div className="w-auto flex flex-row flex-wrap items-center">
+            <div className="w-auto flex flex-row flex-wrap items-center gap-32">
               <NotesCollection
                 notes={notes}
                 onDeleteNotes={handleDelete}
