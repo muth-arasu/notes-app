@@ -37,11 +37,11 @@ const App = () => {
 
   return (
     <>
-      <div className="container h-full w-full  ">
+      <div className=" h-full w-full  ">
         <div className="flex h-full w-full relative">
           <Sidebar />
-          <div className="  w-full h-full   bg-blue-50 py-12">
-            <div className='lg:px-24'>
+          <div className="  w-full h-full sm:p-12  bg-blue-50 py-12">
+            <div className='lg:px-24  '>
               <CreateNote onAddNote={handleAddNote} />
             </div>
             <div className="mt-6 ml-3 flex items-center -gap-3">
